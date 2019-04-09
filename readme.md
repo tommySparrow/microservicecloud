@@ -14,4 +14,8 @@ microservicecloud-provider-dept-8001--->:dept服务提供者
                 </dependency>
 2.使用selectByPrimaryKey 需要在实体类主键id上添加注解@id,标识id
 
+microservicecloud-consumer-dept-80---->:dept服务消费者
+1.解决报错:Cannot determine embedded database driver class for database type NONE
+    解决方案:@SpringBootApplication(exclude={DataSourceAutoConfiguration.class})
+
 eureka--->:
