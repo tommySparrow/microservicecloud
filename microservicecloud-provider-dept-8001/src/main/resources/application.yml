@@ -9,7 +9,7 @@ mybatis:
 
 spring:
   application:
-    name: microservicecloud-dept
+    name: microservicecloud-dept  #注册进eureka服务显示的名称
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
     driver-class-name: com.mysql.jdbc.Driver              # mysql驱动包
@@ -28,3 +28,19 @@ spring:
 logging:
   level:
     com.at.springcloud.mapper: DEBUG
+
+#eureka客户端配置
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka #注册地址
+  instance:
+    instance-id: microservicecloud-dept8001 #修改注册eureka 中Status 的显示名称
+    prefer-ip-address: true     #访问路径可以显示IP地址
+
+#显示/info信息
+info:
+  app.name: microservicecloud
+  company.name: www.baidu.com
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$

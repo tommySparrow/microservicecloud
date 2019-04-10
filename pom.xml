@@ -75,6 +75,7 @@
         </dependencies>
     </dependencyManagement>
 
+    <!--配合eureka显示/info信息-->
     <build>
         <finalName>microservicecloud</finalName>
         <resources>
@@ -89,7 +90,7 @@
                 <artifactId>maven-resources-plugin</artifactId>
                 <configuration>
                     <delimiters>
-                        <delimit>$</delimit>
+                        <delimiter>$</delimiter>
                     </delimiters>
                 </configuration>
             </plugin>
