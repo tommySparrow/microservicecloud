@@ -17,6 +17,8 @@ microservicecloud-provider-dept-8001--->:dept服务提供者
 microservicecloud-consumer-dept-80---->:dept服务消费者
 1.解决报错:Cannot determine embedded database driver class for database type NONE
     解决方案:@SpringBootApplication(exclude={DataSourceAutoConfiguration.class})
+    
+2.在 RestTemplate bean上添加@LoadBalanced---(ResTempltateCustomizer 决定访问的地址调用哪个服务)
 
 eureka--->:
     访问 status的地址显示/info信息步骤;
