@@ -20,7 +20,7 @@ microservicecloud-consumer-dept-80---->:dept服务消费者
     
 2.在 RestTemplate bean上添加@LoadBalanced---(ResTempltateCustomizer 决定访问的地址调用哪个服务)
 
-eureka--->:
+microservicecloud-eureka-7001--->:eureka 提供服务
     访问 status的地址显示/info信息步骤;
         1.在父工程添加
            <build>
