@@ -57,3 +57,16 @@ microservicecloud-eureka-7001--->:eureka 提供服务
                       company.name: www.baidu.com
                       build.artifactId: $project.artifactId$
                       build.version: $project.version$
+                      
+                      
+eureka集群配置:
+microservicecloud-eureka-7001
+microservicecloud-eureka-7002
+microservicecloud-eureka-7003
+
+1.新建三个项目
+2.修改application.yml文件---注册地址
+3.映射IP: 在C:\Windows\System32\drivers\etc 目录下修改hosts文件(单机使用)
+      127.0.0.1		  eureka7001.com
+      127.0.0.1		  eureka7002.com
+      127.0.0.1		  eureka7003.com
