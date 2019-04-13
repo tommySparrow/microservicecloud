@@ -7,7 +7,7 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.netflix.feign.EnableFeignClients;
 
 /**
- * 服务消费者
+ * feign
  * @author jerry
  */
 //scanBasePackages = {"com.at.springcloud"} 作用于feign扫描
