@@ -73,4 +73,8 @@ microservicecloud-eureka-7003
       
       
       
-ribbon:
+ribbon: 
+
+
+
+hystrix: 熔断器 ---->:熔断器熔断方法参数类型要和原方法保持一致
