@@ -1,6 +1,6 @@
 package com.at.springcloud.controller;
 
-import com.at.springcloud.DeptClientService;
+import com.at.springcloud.service.DeptClientService;
 import com.at.springcloud.enties.Dept;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -19,23 +19,23 @@ import java.util.List;
 @RestController
 public class DeptController_Consumer {
     @Autowired
-    private DeptClientService service;
+    private DeptClientService deptClientService;
 
     @RequestMapping(value = "/consumer/dept/get/{id}")
-    public Dept get(@PathVariable("id") Long id)
+    public Dept get(@PathVariable("id") Integer id)
     {
-        return this.service.get(id);
+        return this.deptClientService.get(id);
     }
 
     @RequestMapping(value = "/consumer/dept/list")
     public List<Dept> list()
     {
-        return this.service.list();
+        return this.deptClientService.list();
     }
 
     @RequestMapping(value = "/consumer/dept/add")
     public Object add(Dept dept)
     {
-        return this.service.add(dept);
+        return this.deptClientService.add(dept);
     }
 }
