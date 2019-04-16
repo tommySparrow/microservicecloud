@@ -78,3 +78,6 @@ ribbon:
 
 
 hystrix: 熔断器 ---->:熔断器熔断方法参数类型要和原方法保持一致
+
+HystrixDashboard:
+    访问地址:http://localhost:9001/hystrix
