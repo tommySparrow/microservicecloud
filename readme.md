@@ -81,3 +81,9 @@ hystrix: 熔断器 ---->:熔断器熔断方法参数类型要和原方法保持�
 
 HystrixDashboard:
     访问地址:http://localhost:9001/hystrix
+    
+hosts配置:
+  127.0.0.1		  eureka7001.com
+  127.0.0.1		  eureka7002.com
+  127.0.0.1		  eureka7003.com
+  127.0.0.1     gateway-9527.com
